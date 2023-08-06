@@ -1,0 +1,7 @@
+<div class="container" *ngIf="entries">
+    <div class="entry" *ngFor="let entry of entries" (click)="onSelect(entry.sys.id)">
+        <img class="featuredPhoto" [src]="entry.fields.featuredPhoto.fields.file.url" alt="Featured Photo">
+        <h3 [innerHTML]="entry.fields.title"></h3>
+        <p [innerHTML]="entry.fields.summary"></p>
+    </div>
+</div>

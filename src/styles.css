@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #6B9AC4;
+    --secondary-color: #F4B942;
+    --tertiary-color: #f4b0ba;
+    --quaternary-color: #97D8C4;
+}
+
+.featuredPhoto {
+    width: 350px;
+    height: 350px;
+}

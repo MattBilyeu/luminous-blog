@@ -1,0 +1,8 @@
+<div class="container" *ngIf="activatedEntry">
+    <button (click)="onReturn()">Return</button>
+    <h1 [innerHTML]="activatedEntry.fields.title"></h1>
+    <div class="postContent">
+        <img class="featuredPhoto" [src]="activatedEntry.fields.featuredPhoto.fields.file.url" alt="Featured Photo">
+        <div [innerHTML]="activatedEntry.fields.content | toHtml"></div>
+    </div>
+</div>
